@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Introduction Page</title>
     <style>
         * {
             margin: 0;
@@ -314,6 +314,25 @@
             margin-bottom: 1rem;
         }
 
+        .skill-image {
+            width: 100px;
+            height: 100px;
+            background: var(--gradient);
+            border-radius: 50%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            animation: slideInRight 1s ease;
+            box-shadow: 0 0 50px rgba(99, 102, 241, 0.5);
+        }
+
+        .skill-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background: var(--gradient); /* 余白部分の背景 */
+        }
+
         .skill-level {
             width: 100%;
             height: 5px;
@@ -520,7 +539,7 @@
     <!-- ナビゲーション -->
     <nav id="navbar">
         <div class="nav-container">
-            <div class="logo">My Portfolio</div>
+            <div class="logo">Introduction Page</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -535,8 +554,10 @@
     <section class="hero" id="home">
         <div class="particles" id="particles"></div>
         <div class="hero-content">
-            <h1>Hello, I'm Your Name</h1>
-            <p>Web Developer & Creative Designer</p>
+            <h1>Akari Nishioka</h1>
+            <p>
+                Student Artist and Developer
+            </p>
             <a href="#projects" class="cta-button">View My Work</a>
         </div>
     </section>
@@ -547,14 +568,20 @@
             <h2>About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <h3>私について</h3>
+                    <h3>プロフィール</h3>
                     <p>
-                        フロントエンド開発とUIデザインに情熱を注ぐクリエイティブな開発者です。
-                        モダンなウェブ技術を使用して、美しく機能的なウェブサイトとアプリケーションを作成しています。
+                        早稲田大学人間科学部人間情報科学科3年
+                    </p>
+                    <p>西岡 明里</p>
+                    <br>
+                    <p>
+                        認知科学を専攻し、色彩と言語印象の組み合わせが生体に与える効果とそのVRゲームデザインへの応用を研究中。
                     </p>
                     <p>
-                        常に新しい技術を学び、ユーザー体験を向上させる方法を探求しています。
-                        チームワークを大切にし、クライアントのビジョンを実現することに喜びを感じています。
+                        2023年に学部初のコンピュータサークル「所沢コンピュータ勉強会418」を設立。
+                    </p>
+                    <p>
+                        アニメ制作会社ufotableにて1年ほど開発研究やツール制作に携わり、テクニカルアーティストとしても研修を受けている。
                     </p>
                 </div>
                 <div class="about-image">
@@ -570,43 +597,67 @@
             <h2>My Skills</h2>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <div class="skill-icon">🌐</div>
-                    <h3>HTML5</h3>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="90"></div>
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_UE.png" alt="UE">
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🎨</div>
-                    <h3>CSS3</h3>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="85"></div>
-                    </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">⚡</div>
-                    <h3>JavaScript</h3>
+                    <h3>Unreal Engine</h3>
                     <div class="skill-level">
                         <div class="skill-progress" data-level="80"></div>
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">⚛️</div>
-                    <h3>React</h3>
-                    <div class="skill-level">
-                        <div class="skill-progress" data-level="75"></div>
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_unity.png" alt="Unity">
                     </div>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🔥</div>
-                    <h3>Node.js</h3>
+                    <h3>Unity</h3>
+                    <p>(C#)</p>
                     <div class="skill-level">
                         <div class="skill-progress" data-level="70"></div>
                     </div>
                 </div>
                 <div class="skill-card">
-                    <div class="skill-icon">🎯</div>
-                    <h3>UI/UX</h3>
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_opengl.png" alt="OpenGL">
+                    </div>
+                    <h3>OpenGL</h3>
+                    <p>(C++/GLSL)</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-level="50"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_opencv.png" alt="opencv">
+                    </div>
+                    <h3>OpenCV</h3>
+                    <p>(Python)</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-level="60"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_3dsmax.png" alt="opencv">
+                    </div>
+                    <h3>MaxScript</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-level="50"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-image">
+                        <img src="images/skill_icon/icon_houdini.png" alt="opencv">
+                    </div>
+                    <h3>Houdini</h3>
+                    <div class="skill-level">
+                        <div class="skill-progress" data-level="30"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Design</h3>
+                    <p>PhotoShop</p>
+                    <p>AfterEffects
+                    </p>
                     <div class="skill-level">
                         <div class="skill-progress" data-level="85"></div>
                     </div>
@@ -623,36 +674,78 @@
                 <div class="project-card">
                     <div class="project-image">Project 1</div>
                     <div class="project-info">
-                        <h3 class="project-title">Eコマースサイト</h3>
-                        <p>モダンなオンラインショッピングプラットフォーム</p>
+                        <h3 class="project-title">ぐちゃぐちゃアーティスト</h3>
+                        <p>子どもになって部屋を汚し、スコアを稼ぐVRゲーム</p>
                         <div class="project-tech">
-                            <span class="tech-tag">React</span>
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">UnrealEngine5</span>
+                            <span class="tech-tag">Blender</span>
+                            <span class="tech-tag">PhotoShop</span>
+                            <span class="tech-tag">AfterEffects</span>
+                            <span class="tech-tag">独自AIモデル作成</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">Project 2</div>
                     <div class="project-info">
-                        <h3 class="project-title">タスク管理アプリ</h3>
-                        <p>効率的なプロジェクト管理ツール</p>
+                        <h3 class="project-title">つみつみクラッシャー</h3>
+                        <p>積んだお菓子を一気に落として高得点を狙うパズルゲーム</p>
                         <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Tailwind</span>
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">PhotoShop</span>
                         </div>
                     </div>
                 </div>
                 <div class="project-card">
                     <div class="project-image">Project 3</div>
                     <div class="project-info">
-                        <h3 class="project-title">天気予報アプリ</h3>
-                        <p>リアルタイム天気情報表示アプリケーション</p>
+                        <p>学部卒業研究</p>
+                        <h3 class="project-title">言語印象と色彩デザインの組み合わせが与える生体効果とVRゲームへの応用</h3>
+                        <p>FPS系VRゲーム実験を元に分析した、認知科学的な面から見た3Dゲームデザイン</p>
                         <div class="project-tech">
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">API</span>
-                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">UnrealEngine5</span>
+                            <span class="tech-tag">Blender</span>
+                            <span class="tech-tag">Python(解析)</span>
+                            <span class="tech-tag">HAD(解析)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Project 4</div>
+                    <div class="project-info">
+                        <h3 class="project-title">ufotable長期インターン</h3>
+                        <p>開発研究(R&D)</p>
+                        <p>ツール開発:ProcessColor,3DLOローカルレンダリング自動化,CGデータパブリッシャー,3dsMaxRename自動化</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">MaxScript</span>
+                            <span class="tech-tag">Pyside</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">CUDA(C++)</span>
+                            <span class="tech-tag">UnrealEngine5</span>
+                            <span class="tech-tag">AIモデル学習</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Project 5</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Custom OpenGL Engine(進行中)</h3>
+                        <p>描画パイプラインからモデル読み込み・エフェクトまでを独自構築したOpenGL技術デモ</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">OpenGL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Project 6</div>
+                    <div class="project-info">
+                        <h3 class="project-title">Houdini プロシージャルモデリング(進行中)  
+                        </h3>
+                        <p>プロシージャルモデリング, usdを意識した3DCG作成。今後はツール等の作成も視野</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Houdini</span>
                         </div>
                     </div>
                 </div>
