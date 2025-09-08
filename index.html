@@ -450,6 +450,56 @@
             font-size: 0.8rem;
         }
 
+        /* Contactセクション */
+        .contact {
+            background: #0f0f1e;
+            color: #fff;
+            padding: 5rem 0;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            color: white;
+        }
+
+        /* .contact-form {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        } */
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        .contact-item {
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-5px);
+            background: rgba(99, 102, 241, 0.1);
+            box-shadow: 0 10px 30px rgba(99, 102, 241, 0.2);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
         /* フッター */
         footer {
             background: #0a0a0f;
@@ -730,15 +780,31 @@
         </div>
     </section>
 
+
+    <section class="contact" id="contact"></section>
+        <div class="contact-container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <h4>Email</h4>
+                    <p>akarinishi515@gmail.com</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🔗</div>
+                    <h4>Social</h4>
+                    <div class="social-links">
+                        <a href="https://x.com/nishioka_a515">🐦</a>
+                        <a href="https://www.instagram.com/a_nishi02131229/">📷</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- フッター -->
     <footer>
-        <div class="social-links">
-            <a href="#">📧</a>
-            <a href="#">💼</a>
-            <a href="#">🐦</a>
-            <a href="#">📷</a>
-        </div>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+        <p>&copy; 2025 Akari Nishioka</p>
     </footer>
 
     <script>
